@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monika's Restaurant</title>
     <style>
-        
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #1c1c1c;
             color: white;
-                    }
+        }
         header {
             display: flex;
             justify-content: space-between;
@@ -31,7 +31,6 @@
         .hero {
             text-align: center;
             padding: 100px 20px;
-           
         }
         .hero h1 {
             font-size: 50px;
@@ -40,71 +39,68 @@
         .hero p {
             font-size: 18px;
         }
-        
+        .order-button {
+            background: #ff6600;
+            padding: 15px 30px;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+        .menu-container {
+            text-align: center;
+            padding: 20px;
+        }
+        .row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .column {
+            text-align: center;
+        }
+        .column img {
+            width: 300px;
+            height: 200px;
+            border-radius: 10px;
+        }
+        .column p {
+            margin-top: 10px;
+            font-size: 18px;
+        }
     </style>
 </head>
-<body style="background-color:black">
-    
+<body>
     <header>
         <div class="logo">Monika's Restaurant</div>
         <nav>
-            
-            <a href="WhatsApp Image 2025-03-15 at 17.48.46_547738f0.jpg">Branch</a>
+            <a href="branch.html">Branch</a>
             <a href="about.html">About</a>
-            <a href="form.html" class="order-button" class="order-button" >Order Online</a>
-            
+            <a href="form.html" class="order-button">Order Online</a>
         </nav>
     </header>
-  
+
     <section class="hero">
-        <h1>Our Menu's are here:</h1>
-       
+        <h1>Our Menu is here:</h1>
+    </section>
+
+    <section class="menu-container">
         <div class="row">
             <div class="column">
-                <img src="p114211-167517144363d9167357516.webp" height="200"  width="300">
+                <img src="images/barbeque.jpg" alt="Barbeque">
                 <p>Barbeque</p>
             </div>
             <div class="column">
-                <img src="veggie-supreme-cheese-maxx.9c36faf3796239a077a0a98ba489d7ce.1.jpg" height="200"  width="300" >
-                <p>veggie-supreme-cheese-maxx</p>
+                <img src="images/veggie-supreme.jpg" alt="Veggie Supreme Cheese Maxx">
+                <p>Veggie Supreme Cheese Maxx</p>
             </div>
             <div class="column">
-                <img src="Moist-Chicken-Burgers.jpg" height="200"  width="300">
-                <p>Moist-Chicken-Burgers</p>
-       </div>
-       <p>and many more... </p>
-       <style>
-       * {
-        box-sizing: border-box;
-        }
-        .column {
-        float: left;
-        width: 33.33%;
-        padding: 5px;
-        }
-        .row::after {
-        content:"";
-        display: table;
-        clear: both;
-        }
-    </style>
-  
-        <style>
-            .order-button {
-                background: #ff6600;
-                padding: 15px 30px;
-                color: white;
-                text-decoration: none;
-                font-size: 20px;
-                border-radius: 5px;
-                
-    
-            }
-        </style>
-        
-        
+                <img src="images/chicken-burger.jpg" alt="Moist Chicken Burger">
+                <p>Moist Chicken Burger</p>
+            </div>
+        </div>
+        <p>... and many more!</p>
     </section>
-    
-
 </body>
 </html>
